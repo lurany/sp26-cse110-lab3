@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Project Team Meeting</title>
+    </head>
+    <body>
+        <header>
+            <h1>Project Team Meeting</h1>
+            <h2>Check in</h2>
+            <h3>April 14, 2026</h3>
+
+            <nav>
+                <a href="#attendance">Attendance</a><br>
+                <a href="#agenda">Agenda</a><br>
+                <a href="#unfinished">Unfinished business</a><br>
+                <a href="#new">New business</a><br> 
+                <a href="#feedback">Comments/Questions</a><br>
+                <a href="#media">Media</a><br>
+                <a href="#form">Form</a><br>
+            </nav>
+        </header>
+
+        <main>
+            <section id="attendance">
+                <h2>Attendance</h2>
+                <ul>
+                    <li>Calvin</li>
+                    <li>Kevin</li>
+                    <li>Anthony</li>
+                </ul>
+            </section>
+            <section id="agenda">
+                <h2>Agenda</h2>
+                <p>We talked about what we want to get done first for the project.</p>
+                <div>
+                    <ol>
+                        <li>Talk about projects</li>
+                        <li>Splitting up work</li>
+                        <li>Deadlines</li>
+                    </ol>
+                </div>
+                <hr>
+            </section>
+
+             <section id="unfinished">
+                <h2>Unfinished Business</h2>
+                <p>Roles were not fully assigned yet.</p>
+            </section>
+
+            <section id="new">
+                <h2>New Business</h2>
+                <p>We talked about the website layout.</p>
+            </section>
+
+            <section id="feedback">
+                <h2>Comments/Questions</h2>
+                <p><b>Question:</b> What roles do you guys want?</p>
+                <p><strong>Comment:</strong> The project needs to be planned out.</p>
+                <p><i>Concern:</i> We should make a strict deadline.</p>
+                <p><em>Note:</em> We will check progress at the next meeting.</p>
+
+                <details>
+                    <summary>More notes</summary>
+                    <p><span>Extra thought:</span> Make sure to git pull to get newest updates.</p>
+                </details>
+            </section>
+
+            <section id="media">
+                <h2>Media</h2>
+                <img src="image12.png" alt="meeting notes or project sketch" width="300">
+
+                <p>Audio:</p>
+                <audio controls src="audio12.m4a"></audio>
+
+                <p>Video:</p>
+                <video controls width="320" src="IMG_1578.mov"></video>
+            </section>
+
+            <section id="form">
+                <h2>Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Meeting Form</legend>
+
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </p>
+
+                        <p>
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date">
+                        </p>
+
+                        <p>How was the meeting?</p>
+                        <input type="radio" id="good" name="helpful" value="good">
+                        <label for="good">Good</label>
+
+                        <input type="radio" id="bad" name="helpful" value="bad">
+                        <label for="bad">Bad</label>
+
+                        <p>What needs to be improved?</p>
+                        <input type="checkbox" id="design" name="design">
+                        <label for="design">Design</label>
+
+                        <input type="checkbox" id="coding" name="coding">
+                        <label for="coding">Coding</label>
+
+                        <p>
+                            <label for="tool">Tool:</label>
+                            <input list="tools" id="tool" name="tool">
+                            <datalist id="tools">
+                                <option value="VS Code"></option>
+                                <option value="GitHub"></option>
+                                <option value="Discord"></option>
+                            </datalist>
+                        </p>
+
+                        <p>
+                            <label for="role">Role:</label>
+                            <select id="role" name="role">
+                                <option value="frontend">Frontend</option>
+                                <option value="backend">Backend</option>
+                                <option value="presenting">Presentation</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="comments">Comments:</label><br>
+                            <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+                        </p>
+
+                        <button type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </section>
+        </main>
+
+        <footer>
+            <p>End of meeting notes</p>
+        </footer>
+    </body>
+</html>
