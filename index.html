@@ -3,6 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Project Team Meeting</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            header {
+                background-color: lightseagreen;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -11,30 +20,30 @@
             <h3>April 14, 2026</h3>
 
             <nav>
-                <a href="#attendance">Attendance</a><br>
-                <a href="#agenda">Agenda</a><br>
-                <a href="#unfinished">Unfinished business</a><br>
-                <a href="#new">New business</a><br> 
-                <a href="#feedback">Comments/Questions</a><br>
-                <a href="#media">Media</a><br>
-                <a href="#form">Form</a><br>
+                <a class="nav-link" href="#attendance">Attendance</a><br>
+                <a class="nav-link" href="#agenda">Agenda</a><br>
+                <a class="nav-link" href="#unfinished">Unfinished business</a><br>
+                <a class="nav-link" href="#new">New business</a><br> 
+                <a class="nav-link" href="#feedback">Comments/Questions</a><br>
+                <a class="nav-link" href="#media">Media</a><br>
+                <a class="nav-link" href="#form">Form</a><br>
             </nav>
         </header>
 
         <main>
             <section id="attendance">
                 <h2>Attendance</h2>
-                <ul>
-                    <li>Calvin</li>
-                    <li>Kevin</li>
-                    <li>Anthony</li>
+                <ul class="team-list">
+                    <li class="team-member">Calvin</li>
+                    <li class="team-member">Kevin</li>
+                    <li class="team-member">Anthony</li>
                 </ul>
             </section>
             <section id="agenda">
                 <h2>Agenda</h2>
                 <p>We talked about what we want to get done first for the project.</p>
-                <div>
-                    <ol>
+                <div class="agenda-box">
+                    <ol class="agenda-list">
                         <li>Talk about projects</li>
                         <li>Splitting up work</li>
                         <li>Deadlines</li>
@@ -48,7 +57,7 @@
                 <p>Roles were not fully assigned yet.</p>
             </section>
 
-            <section id="new">
+            <section id="new" data-topic="planning">
                 <h2>New Business</h2>
                 <p>We talked about the website layout.</p>
             </section>
@@ -79,8 +88,8 @@
 
             <section id="form">
                 <h2>Form</h2>
-                <form>
-                    <fieldset>
+                <form class="meeting-form">
+                    <fieldset class="form-grid">
                         <legend>Meeting Form</legend>
 
                         <p>
@@ -102,10 +111,10 @@
 
                         <p>What needs to be improved?</p>
                         <input type="checkbox" id="design" name="design">
-                        <label for="design">Design</label>
+                        <label class="improve-option" for="design">Design</label>
 
                         <input type="checkbox" id="coding" name="coding">
-                        <label for="coding">Coding</label>
+                        <label class="improve-option" for="coding">Coding</label>
 
                         <p>
                             <label for="tool">Tool:</label>

@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box; /* makes padding easier to manage */
+}
+
+body {
+    font-family: "Work Sans", Arial, sans-serif; /* default font */
+    background-color: rgb(29, 220, 163); /* rgb color */
+    color: #222222; /* hex color */
+    margin: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+main {
+    width: 90%; /* relative unit */
+    max-width: 900px; /* absolute unit */
+    margin: 0 auto; /* centers main content */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Header styling */
+header {
+    padding: 1rem;
+    border-bottom: 3px solid hsl(180, 60%, 35%);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+h1, h2 {
+    text-align: left; /* aligns headings */
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3 {
+    color: rgb(243, 240, 49);
+}
+
+/* Navigation links */
+nav a {
+    display: inline-block;
+    margin: 0.25rem 0; /* spacing between links */
+}
+
+section {
+    background-color: #ffffff; /* white section background */
+    margin: 1rem 0; /* space between sections */
+    padding: 1rem; /* space inside sections */
+    border: 2px solid lightseagreen;
+    border-radius: 8px; /* rounded corners */
+    max-width: 100%;
+    scroll-margin-top: 220px;
+}
+
+#attendance {
+    padding: 1rem;
+}
+
+#agenda {
+    min-width: 200px;
+}
+
+#form {
+    background-color: rgba(200, 240, 240, 0.8);
+    button {
+        background-color: #ffffff;
+        border: 2px solid teal;
+        padding: 0.5rem 1rem;
+    }
+}
+
+fieldset {
+    max-width: 100%;
+    min-width: 0;
+}
+
+#media img {
+    width: 300px; /* image width */
+    max-width: 100%; /* keeps image responsive */
+    height: auto; /* maintains image ratio */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    position: static;
+}
+
+/* Selector */
+.nav-link {
+    color: rgb(14, 63, 79);
+}
+
+section[data-topic="planning"] {
+    border-style: dashed;
+}
+
+.nav-link:hover {
+    color: crimson;
+}
+
+.nav-link:active {
+    color: darkgreen;
+}
+
+.team-member {
+    display: block;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+ul.team-list {
+    list-style-type: square;
+}
+
+section > h2 {
+    letter-spacing: 0.05em;
+}
+
+h2 + p {
+    font-size: 1.1rem;
+}
+
+h2 ~ p {
+    line-height: 1.4;
+}
+
+label.improve-option {
+    text-decoration: underline;
+}
+
+/* Variables and color functions */
+:root {
+    --section-accent: teal;
+}
+
+main section {
+    border-color: var(--section-accent, darkcyan);
+}
+
+#new {
+    background-color: color(display-p3 0.7 0.95 0.85);
+}
+
+#unfinished {
+    background-color: color-mix(in srgb, white 70%, lightseagreen 30%);
+}
+
+/* Box model */
+.agenda-box {
+    margin-top: 10px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding: 1em 1.5em 1em 1.5em;
+    border-width: 0.15cm;
+    border-style: solid;
+    border-color: teal;
+}
+
+.meeting-form {
+    display: block;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vw;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.form-grid {
+    display: grid;
+    padding: 1rem;
+}
+
+#media {
+    position: relative;
+    overflow-wrap: break-word;
+}
+
+#media img,
+#media audio,
+#media video {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+}
+
+#media img,
+#media video {
+    height: auto;
+}
+
+.meeting-form input[type="text"],
+.meeting-form input[type="date"],
+.meeting-form select,
+.meeting-form textarea {
+    width: 100%;
+    max-width: 320px;
+}
+
+.meeting-form input[type="radio"],
+.meeting-form input[type="checkbox"] {
+    width: auto;
+    height: auto;
+}
+
+.meeting-form p {
+    margin-bottom: 0.75rem;
+}
+
+section:has(img) {
+    box-shadow: 4px 4px 10px gray;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+
+    .team-list {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
