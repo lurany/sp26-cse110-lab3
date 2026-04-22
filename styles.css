@@ -57,6 +57,7 @@ section {
     border-radius: 8px; /* rounded corners */
     max-width: 100%;
     scroll-margin-top: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 #attendance {
@@ -240,6 +241,6 @@ section:has(img) {
 
     nav a {
         display: block;
-        margin: 0.5rem 0;
+        margin: 0.6rem 0;
     }
 }
